@@ -1,0 +1,7 @@
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 233\bin\Debug\STEP 233.exe.config
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 233\bin\Debug\STEP 233.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 233\bin\Debug\STEP 233.pdb
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 233\obj\Debug\STEP 233.csproj.AssemblyReference.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 233\obj\Debug\STEP 233.csproj.CoreCompileInputs.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 233\obj\Debug\STEP 233.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 233\obj\Debug\STEP 233.pdb
