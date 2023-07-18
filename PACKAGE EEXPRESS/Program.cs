@@ -35,8 +35,10 @@ namespace PACKAGE_EEXPRESS
                 Console.WriteLine("");// ADD SPACE
                 Console.WriteLine("Package too Heavy!");
                 Console.WriteLine("*** END PROGRAM  ***");
+                Console.ReadLine();
                 Console.WriteLine("");// ADD SPACE
                 Environment.Exit(0);
+                
             }
 
             // ENTER DATA FOR WIDTH
@@ -58,6 +60,7 @@ namespace PACKAGE_EEXPRESS
                 // EXIT PROGRAM IF PACKAGE TOO BIG
                 Console.WriteLine("Your package is too large ");
                 Console.WriteLine("for via Package Express ");
+                Console.ReadLine();
                 Console.WriteLine("");// ADD SPACE
                 Console.WriteLine("*** END PROGRAM  ***");
                 Environment.Exit(0);
@@ -72,9 +75,10 @@ namespace PACKAGE_EEXPRESS
 
             // PRINT PRICE QUOTE
             Console.WriteLine("Your shipping cost is: $ {0:F2}", total );
-            
+            Console.ReadLine();
 
-
+            // ADDED READLINE STATEMENTS TO MAKE SURE 
+            // DISPLAY IS SEEN
 
 
         }
