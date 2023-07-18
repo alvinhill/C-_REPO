@@ -1,0 +1,7 @@
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\229 REDO\bin\Debug\229 REDO.exe.config
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\229 REDO\bin\Debug\229 REDO.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\229 REDO\bin\Debug\229 REDO.pdb
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\229 REDO\obj\Debug\229 REDO.csproj.AssemblyReference.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\229 REDO\obj\Debug\229 REDO.csproj.CoreCompileInputs.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\229 REDO\obj\Debug\229 REDO.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\229 REDO\obj\Debug\229 REDO.pdb
