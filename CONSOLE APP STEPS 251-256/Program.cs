@@ -13,10 +13,10 @@ namespace CONSOLE_APP_STEPS_251_256
         {
 
             // CONSOLE APP PART ONE  **************************
-           
-            {
 
-                string newSting;
+            {
+                Console.WriteLine(" ***   PART ONE   ***");
+                string newString;
 
                 // SETUP AND POPULATE CAR ARRAY
                 string[] cars = new string[5];
@@ -30,16 +30,17 @@ namespace CONSOLE_APP_STEPS_251_256
                 cars[3] = "Cadilac";
                 cars[4] = "Dodge";
 
+                // GET USER INPUT
+                string addOn;
+                Console.Write("Enter Paint Color For the Car: ");
+                addOn = Console.ReadLine();
+
                 for (int i = 0; i < cars.Length; i++)
                 {
-                    // GET USER INPUT
-                    string addOn;
-                    Console.Write("Enter Paint Color For the Car: ");
-                    addOn = Console.ReadLine();
 
                     // COMBINE THE STRINGS
-                    newSting = cars[i] + " " + addOn;
-                    paint[i] = newSting;
+                    newString = cars[i] + " " + addOn;
+                    paint[i] = newString;
 
                 }
 
@@ -49,8 +50,13 @@ namespace CONSOLE_APP_STEPS_251_256
                 {
                     Console.WriteLine("car and paint");
                     Console.WriteLine(paint[J]);
-
+                    Console.ReadLine();
                 }
+
+
+
+
+                Console.WriteLine(" ***   PART TWO   ***");
                 Console.WriteLine("");  // MAKE SPACE
 
                 // CONSOLE APP PART TWO INFITE LOOP   **************************
@@ -61,8 +67,8 @@ namespace CONSOLE_APP_STEPS_251_256
                     Z++;
                 }
                 // FIXED INFINITE LOOP BY ADDING 1 TO "Z" DURING THE LOOP
-
-                // CONSOLE APP PART THREE     *********************************
+                Console.WriteLine(" ***   PART THREE  ***");
+                Console.WriteLine("");// ADD SPACE
                 // ************   PART A    ****************
                 // OUTPUT ITEMS THAT ARE LESS THAN FIVE
                 for (int W = 0; W < 5; W++)
@@ -79,121 +85,66 @@ namespace CONSOLE_APP_STEPS_251_256
                     Console.WriteLine("step 253 PART 2 <= " + Y);
                 }
                 // CONSOLE APP PART FOUR      ************************
+                // ##########################################
 
-
-                // CREATE LIST
-                List<string> plane = new List<string>();
-
-                // POPULATE THE LIST
-                plane.Add("b17");
-                plane.Add("f22");
-                plane.Add("b52");
-
-                // CREATE DO LOOP
-                string choice;
-                do
-                {
-                    // DISPLAY CHOICES
-                    Console.WriteLine("Enter The Name of the Plane To Find it's Hangar");
-                    Console.WriteLine("Enter a choice: b17 - f22 or b52 ");
-
-                    // INPUT NUMBER CHOICE
-                    choice = Console.ReadLine();
-
-                    // MAKE FOR LOOP FOR LIST
-                    for (int i = 0; i < plane.Count; i++)
-
-                    {
-                        // COMPARE INPUT TO LIST
-                        if (choice == plane[i])
-                        {
-
-                            Console.WriteLine("");  // MAKE SPACE
-
-                            // OUTPUT CORRECT CHOICE
-                            Console.WriteLine("The plane is in hangar # " + i);
-
-                            // END PROGRAM SECTION
-                            Console.WriteLine("END PROGRAM ");
-                            Console.ReadLine();
-                           // Environment.Exit(0);
-
-                        }
-
-
-                        // IF SELECTION IS NOT FOUND PRINT MESSAGE TO SCREEN AND CONTINUE LOOP
-                        if (choice != plane[i])
-                        {
-                            Console.WriteLine("hangar not found for: " + plane[i]);
-                        }
-
-                        Console.WriteLine(""); // MAKE SPACE
-
-                    }
-                }
-                while (choice != "end");
-
-                //**********************************************************
-
-                // CONSOLE APP PART FOUR      ************************
-
-
-                // CREATE LIST
+                // SET UP LIST
                 List<string> plane1 = new List<string>();
+
 
                 // POPULATE THE LIST
                 plane1.Add("b17");
                 plane1.Add("f22");
                 plane1.Add("b52");
-                plane1.Add("b17");
+                plane1.Add("DUMMY LOAD");
 
 
-                // CREATE DO LOOP
-                string choice1;
-                do
+                // string choice1;
+                int index = 0;
+                string choice2;
+
+                // DISPLAY CHOICES
+                Console.WriteLine("*** PART FOUR ***");
+                Console.WriteLine("");// ADD SPACE
+                Console.WriteLine("Enter The Name of the Plane To Find it's Hangar");
+                Console.WriteLine("Enter a choice: b17 - f22 or b52 ");
+
+                // INPUT NUMBER CHOICE
+                choice2 = Console.ReadLine();
+
+                // SET UP FOR LOOP
+                for (int i = 0; i < plane1.Count; i++)
+
                 {
-                    // DISPLAY CHOICES
-                    Console.WriteLine("Enter The Name of the Plane To Find it's Hangar");
-                    Console.WriteLine("Enter a choice: b17 - f22 or b52 ");
-
-                    // INPUT NUMBER CHOICE
-                    choice1 = Console.ReadLine();
-
-                    // MAKE FOR LOOP FOR LIST
-                    for (int i = 0; i < plane1.Count; i++)
-
+                    // CHECK TO SEE IF DATA SEARCH EXCEEDS LIST ITERATIONS
+                    if (i == 3)
                     {
-                        // COMPARE INPUT TO LIST
-                        if (choice1 == plane1[i])
-                        {
-
-                            Console.WriteLine("");  // MAKE SPACE
-
-                            // OUTPUT CORRECT CHOICE
-                            Console.WriteLine("The plane is in hangar # " + i);
-
-                            // END PROGRAM SECTION
-                            Console.WriteLine("END PROGRAM ");
-                            Console.ReadLine();
-                           
-
-                        }
-
-
-                        // IF SELECTION IS NOT FOUND PRINT MESSAGE TO SCREEN AND CONTINUE LOOP
-                        if (choice != plane1[i])
-                        {
-                            Console.WriteLine("hangar not found for: " + plane1[i]);
-                        }
-
-                        Console.WriteLine(""); // MAKE SPACE
+                        Console.WriteLine("User Input is Not on The List");
+                        Console.ReadLine();
+                      
 
                     }
-                }
-                while (choice != "end");
 
+                    // CHECK FOR MATCH INPUT FROM choice2
+                    if (plane1[i].Contains(choice2))
+                    {
+                        index = i;
+                        Console.WriteLine("Index= " + index);
+                        Console.ReadLine();
+                        Environment.Exit(0);
+                    }
+
+
+                }
+
+
+
+                // ##########################################
                 //************************************************************
-                // CONSOLE APP PART FIVE      ************************
+                // CONSOLE APP PART FIVE  
+                Console.WriteLine(" *** PART FIVE ***");
+                Console.WriteLine("");// ADD SPACE
+
+                // CONSOLE APP PART FIVE  
 
                 // CREATE LIST
                 List<string> pets = new List<string>();
@@ -201,50 +152,71 @@ namespace CONSOLE_APP_STEPS_251_256
                 // ADD ITEMS TO LIST ALONG WITH DUPLICATE ITEM
                 pets.Add("dog");
                 pets.Add("fish");
-                pets.Add("cat");
-                pets.Add("fish");// DUPLICATE
                 pets.Add("frog");
+                pets.Add("fish");// DUPLICATE
+                pets.Add("cat");
+                pets.Add("STOP");
+
+                string choice3;
 
                 // SELECT ITEM FROM LIST WITH DO LOOP
-                                string choice2;
-                do
-                {
-                    Console.WriteLine("Enter a choice of pets: ");
-                    Console.WriteLine("");// ADD SPACE
 
-                    choice2 = Console.ReadLine();
+                Console.WriteLine("Enter a choice of pets: ");
+                Console.WriteLine("Enter a choice: dog, fish, frog or cat, ");
+                Console.WriteLine("");// ADD SPACE
+                choice3 = Console.ReadLine();
 
 
-                    // USE FOR LOOP TO GET STRING ITEM FROM LIST
-                    for (int i = 0; i < pets.Count; i++)
+                // SET UP FOR LOOP
+                foreach (string loopData in pets)
 
+                    if (loopData == choice3)
                     {
-                        if (choice2 == pets[i])
-                        {
-                             Console.WriteLine("Selection is at index: " + i);
-                            // end program here
-                        }
-                    }
-                }
-                while (choice2 != "end");
 
-                //  ******************* PART 6 ****************************
+                        Console.WriteLine(loopData);
+                        Console.WriteLine("");
+                        Console.WriteLine("");
+                        Console.WriteLine("");
+                    }
+
+                Console.ReadLine();
+
+                for (int j = 0; j < pets.Count; j++)
+                {
+
+                    if (j == 5)
+                    {
+
+                        Console.WriteLine("User Data Not Found");
+                        break;
+                    }
+
+                }
+
+                Console.WriteLine(" ***   PART SIX   ***");
 
                 // CONSOLE APP PART 6   
                 // SHOW UNIQUE AND DUPLICATE ITEMS IN A LIST PROGRAM
 
                 // CREATE LIST WITH DUPLICATES
-                string[] carZ = { "ford", "Chevy", "dodge", "dodge", "buick", "dodge", "ford" };
 
-                // CREATE MAIN LIST AS A VARIABLE
+                List<string> carz = new List<string>();
+                carz.Add("ford");
+                carz.Add("chevy");
+                carz.Add("mercury");
+                carz.Add("dodge");
+                carz.Add("ford");
+                carz.Add("dodge");
+                carz.Add("toyota");
+
                 var mainList = new List<string>();
 
-                // CREATE DUPLICATES LIST AS A VARIBLE
                 var dupeList = new List<string>();
 
                 // FOREACH LOOP
-                foreach (var loopData in carZ)
+                foreach (string loopData in carz)
                 {
+
                     // IF mainList DOES NOT CONTAIN loopData, ADD TO mainList
                     if (!mainList.Contains(loopData))
                         mainList.Add(loopData);
@@ -263,7 +235,47 @@ namespace CONSOLE_APP_STEPS_251_256
 
                 Console.ReadLine();
 
-            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                //  ******************* PART 6 ****************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            } 
         }
     }
 }
