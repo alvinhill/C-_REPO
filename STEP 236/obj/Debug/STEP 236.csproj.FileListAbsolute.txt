@@ -1,0 +1,7 @@
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 236\bin\Debug\STEP 236.exe.config
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 236\bin\Debug\STEP 236.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 236\bin\Debug\STEP 236.pdb
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 236\obj\Debug\STEP 236.csproj.AssemblyReference.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 236\obj\Debug\STEP 236.csproj.CoreCompileInputs.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 236\obj\Debug\STEP 236.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\STEP 236\obj\Debug\STEP 236.pdb

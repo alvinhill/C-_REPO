@@ -2,35 +2,55 @@
 using System.Collections.Generic;
 
 
-
+//CONSOLE APP STRINGS AND INTEGERS SUBMISSION ASSIGNMENT STEP 263
 
     class Program
     {
     static void Main()
     {
-        List<int> intList = new List<int>();
-        intList.Add(42);
-        intList.Add(37);
-        intList.Add(51);
-        intList.Add(27);
+        List<int> numOne = new List<int>();
+        numOne.Add(42);
+        numOne.Add(37);
+        numOne.Add(51);
+        numOne.Add(27);
 
-        //int[] numarray = new int[5];
-        //numarray[0] = 5;
-        //numarray[1] = 2;
-        //numarray[2] = 10;
-        //numarray[3] = 200;
-        //numarray[4] = 5000;
+        int numD;
+        int answer;
 
-        //int[] myarray1 = new int[] { 5, 2, 10, 200, 5000 };
+        try
+        {
+            Console.Write("Enter a Divisor ");
+            numD = Convert.ToInt32(Console.ReadLine());
 
-        //int[] newarray2 = { 5, 2, 10, 200, 5000 };
+            for (int i = 0; i < numOne.Count; i++)
 
-        //Console.WriteLine(myarry[5]);
+            {
+                answer = numOne[i] / numD;
+                Console.WriteLine( numOne[i]+ " / "+ numD+  " = "+answer);
 
+            }
 
+            Console.ReadLine();
 
+        }
+            
+        catch (FormatException ex)
+        {
+            Console.WriteLine("The program has emerged from a try/cacth block");
+            Console.WriteLine("This will allow the program to contiue");
 
+            Console.WriteLine(ex.Message +"Use Numbers Only");
+            Console.ReadLine();
 
+        }
+        catch (DivideByZeroException ex)
+        {
+            Console.WriteLine("The program has emerged from a try/cacth block");
+            Console.WriteLine("This will allow the program to contiue");
+            Console.WriteLine(ex.Message + "Use a Non-Zero Number");
+            Console.ReadLine();
+
+        }
 
     }
     }
