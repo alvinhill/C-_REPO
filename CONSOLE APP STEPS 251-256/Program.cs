@@ -136,64 +136,65 @@ namespace CONSOLE_APP_STEPS_251_256
 
                 }
 
+                // CONSOLE APP PART FIVE X      ************************
 
-
-                // ##########################################
-                //************************************************************
-                // CONSOLE APP PART FIVE  
-                Console.WriteLine(" *** PART FIVE ***");
-                Console.WriteLine("");// ADD SPACE
-
-                // CONSOLE APP PART FIVE  
-
-                // CREATE LIST
                 List<string> pets = new List<string>();
 
-                // ADD ITEMS TO LIST ALONG WITH DUPLICATE ITEM
+                // POPULATE THE LIST
                 pets.Add("dog");
-                pets.Add("fish");
-                pets.Add("frog");
-                pets.Add("fish");// DUPLICATE
                 pets.Add("cat");
-                pets.Add("STOP");
+                pets.Add("fish");
+                pets.Add("bird");
+                pets.Add("fish");
+                                             
 
-                string choice3;
+                string choiceX;
 
-                // SELECT ITEM FROM LIST WITH DO LOOP
-
-                Console.WriteLine("Enter a choice of pets: ");
-                Console.WriteLine("Enter a choice: dog, fish, frog or cat, ");
+                // DISPLAY CHOICES
+                Console.WriteLine("*** PART FIVE ***");
                 Console.WriteLine("");// ADD SPACE
-                choice3 = Console.ReadLine();
+                Console.WriteLine("Enter The Name of the Pet To Find ");
+                Console.WriteLine("dog, cat, fish or bird ");
 
+                // INPUT NUMBER CHOICE
+                choiceX = Console.ReadLine();
+                Console.WriteLine("");// ADD SPACE
 
                 // SET UP FOR LOOP
-                foreach (string loopData in pets)
-
-                    if (loopData == choice3)
-                    {
-
-                        Console.WriteLine(loopData);
-                        Console.WriteLine("");
-                        Console.WriteLine("");
-                        Console.WriteLine("");
-                    }
-
-                Console.ReadLine();
-
-                for (int j = 0; j < pets.Count; j++)
+                for (int i = 0; i < pets.Count; i++)
                 {
-
-                    if (j == 5)
+                    // CHECK FOR NON MATCHING INPUT
+                    if (pets.IndexOf(choiceX) == -1)
                     {
-
-                        Console.WriteLine("User Data Not Found");
-                        break;
+                        // PRINT NOT FOUND MESSAGE
+                        Console.WriteLine("NOT IN THE LIST");
+                        Console.ReadLine();
                     }
+
+                    // SELECT MATCHING STRING
+                    if (pets[i].Contains(choiceX))
+                    {
+                        // FORMAT SCREEN
+                        Console.WriteLine("________");
+                        Console.WriteLine("RESULT: ");
+
+                        // PRINT MATCH AND INDEX
+                        Console.WriteLine(pets[i] + " Found At Index: " + i);
+                        Console.ReadLine();
+
+
+                    }
+
 
                 }
 
-                Console.WriteLine(" ***   PART SIX   ***");
+
+
+
+                    // ##########################################
+
+
+                    Console.WriteLine(" ***   PART SIX   ***");
 
                 // CONSOLE APP PART 6   
                 // SHOW UNIQUE AND DUPLICATE ITEMS IN A LIST PROGRAM
@@ -238,39 +239,7 @@ namespace CONSOLE_APP_STEPS_251_256
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                 //  ******************* PART 6 ****************************
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
