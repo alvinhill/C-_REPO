@@ -16,7 +16,7 @@ namespace CONSOLE_APP_STEPS_251_256
 
             {
                 Console.WriteLine(" ***   PART ONE   ***");
-                string newString;
+                
 
                 // SETUP AND POPULATE CAR ARRAY
                 string[] cars = new string[5];
@@ -37,23 +37,19 @@ namespace CONSOLE_APP_STEPS_251_256
 
                 for (int i = 0; i < cars.Length; i++)
                 {
-
                     // COMBINE THE STRINGS
-                    newString = cars[i] + " " + addOn;
-                    paint[i] = newString;
-
+                
+                    cars[i] = cars[i] + " " + addOn;
                 }
 
                 // OUTPUT LOOP FOR THE NEW STRING
-                for (int J = 0; J < paint.Length; J++)
+                for (int J = 0; J < cars.Length; J++)
 
                 {
                     Console.WriteLine("car and paint");
-                    Console.WriteLine(paint[J]);
+                    Console.WriteLine(cars[J]);
                     Console.ReadLine();
                 }
-
-
 
 
                 Console.WriteLine(" ***   PART TWO   ***");
@@ -130,13 +126,13 @@ namespace CONSOLE_APP_STEPS_251_256
                         index = i;
                         Console.WriteLine("Index= " + index);
                         Console.ReadLine();
-                        Environment.Exit(0);
+                        break;
                     }
 
 
                 }
 
-                // CONSOLE APP PART FIVE X      ************************
+                // CONSOLE APP PART FIVE       ************************
 
                 List<string> pets = new List<string>();
 
@@ -206,8 +202,8 @@ namespace CONSOLE_APP_STEPS_251_256
                 carz.Add("chevy");
                 carz.Add("mercury");
                 carz.Add("dodge");
-                carz.Add("ford");
-                carz.Add("dodge");
+                carz.Add("ford"); // duplicate
+                carz.Add("dodge"); // duplicate
                 carz.Add("toyota");
 
                 var mainList = new List<string>();
@@ -235,6 +231,7 @@ namespace CONSOLE_APP_STEPS_251_256
                     Console.WriteLine(loopData + " Duplicate");
 
                 Console.ReadLine();
+
 
 
 
