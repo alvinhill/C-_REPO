@@ -10,29 +10,31 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
     {
 
         // DEFINE VARIABLES
+
+        // public int numMU = 10;
+        //public int numC = 100;
+        //public int numSUS = 10;
         public int numU;
-        public int numMU = 10;
-        public int numC = 100;
         public int numSC;
         public int numMC;
-        public int numSUS = 10;
+        
 
         // ADDITION SECTION
         public int Addnum()
         {
-            return numU + numC;
+            return numU + 100;
         }
 
         // SUBTRACTION SECTION
         public int Subnum()
         {
-            return numSC - numSUS;
+            return numSC - 10;
         }
 
         // MULTIPLICATION SECTION
         public int Multnum()
         {
-            return numMU * numMC;
+            return numMC * 10;
         }
 
 

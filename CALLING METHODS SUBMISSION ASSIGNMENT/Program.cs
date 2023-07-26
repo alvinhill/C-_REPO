@@ -13,7 +13,6 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
             // CREATE OBJECT
             CALC calc = new CALC();
 
-
             Console.Write("Add 100 to Your Number: ");
             calc.numU = Convert.ToInt32(Console.ReadLine());
 
