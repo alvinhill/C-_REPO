@@ -185,58 +185,53 @@ namespace CONSOLE_APP_STEPS_251_256
                 }
 
 
-
-
                     // ##########################################
 
 
                     Console.WriteLine(" ***   PART SIX   ***");
+                // CREATE INITIAL LIST
+                List<string> data = new List<string>();
 
-                // CONSOLE APP PART 6   
-                // SHOW UNIQUE AND DUPLICATE ITEMS IN A LIST PROGRAM
+                data.Add("Mary");
+                data.Add("Paula");
+                data.Add("NANCY");
+                data.Add("Linda");
+                data.Add("Paula");
+                data.Add("Shirley");
 
-                // CREATE LIST WITH DUPLICATES
+                // CREATE UNIQUE LIST
+                List<string> dataNew = data.Distinct().ToList();
 
-                List<string> carz = new List<string>();
-                carz.Add("ford");
-                carz.Add("chevy");
-                carz.Add("mercury");
-                carz.Add("dodge");
-                carz.Add("ford"); // duplicate
-                carz.Add("dodge"); // duplicate
-                carz.Add("toyota");
+                // CREATE LOOP
+                foreach (string loopData in dataNew)
 
-                var mainList = new List<string>();
-
-                var dupeList = new List<string>();
-
-                // FOREACH LOOP
-                foreach (string loopData in carz)
                 {
+                    // PRINT THE UNQUE LIST                
+                    Console.WriteLine("UNIQUE " + loopData);
 
-                    // IF mainList DOES NOT CONTAIN loopData, ADD TO mainList
-                    if (!mainList.Contains(loopData))
-                        mainList.Add(loopData);
-
-                    // IF mainList DOES ALREADY CONTAIN NEXT STRING, PUT IT IN dupeList
-                    else dupeList.Add(loopData);
                 }
-                // SHOW WITHOUT DUPES
-                foreach (var loopData in mainList)
-                    Console.WriteLine(loopData + " Unique");
 
-                //SHOW DUPLICATES
-                Console.WriteLine("");
-                foreach (var loopData in dupeList)
-                    Console.WriteLine(loopData + " Duplicate");
+                // CREATE FOR LOOP
+                for (int i = 0; i < data.Count; i++)
 
-                Console.ReadLine();
+                {   // COMPARE UNIQUE LIST TO THE FIRST LIST
+                    if (data[i] == dataNew[i])
+                    {
+                        // REMOVE ALL MATCHING ITEMS
+                        data.RemoveAt(i);
+                    }
+
+                    // PRINT OUT THE REMAINING ITEM AS DUPLICATES
+                    Console.WriteLine("DUPLICATE " + data[i]);
+                    
+                    Console.ReadLine();
+
+                }
 
 
 
 
-
-                //  ******************* PART 6 ****************************
+                //  *******************  END ****************************
 
 
 
