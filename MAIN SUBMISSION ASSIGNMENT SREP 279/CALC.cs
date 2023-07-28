@@ -14,6 +14,9 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
         //public decimal numTwo;
         //public string numThree;
 
+        public int numOne { get; set; }
+        public decimal numTwo {get;set;}
+        public string numThree { get; set; }
 
         // CREATE INT CLASS
         public int DoMath(int numOne)
