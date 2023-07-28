@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
 {
-    class CALC
-    {
-        // ASSIGN CLASS VARIABLES
-        public int numU;
-        public int numSC;
-        public int numMC;
     
+    class CALC
+    {   
+        // STEP 275
+        
+        // ACCESS PROPERTY
+         public int numU;
+      
+    
+
+        public int num1 { get; set; }
+       // public int numSC { get; set; }
         // ADDITION SECTION
         public int Addnum(int numU)
         {
@@ -20,15 +25,15 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
         }
 
         // SUBTRACTION SECTION
-        public int Subnum(int numSC)
+        public int Subnum(int numU)
         {
-            return numSC - 10;
+            return numU - 10;
         }
 
         // MULTIPLICATION SECTION
-        public int Multnum( int numMC)
+        public int Multnum( int numU)
         {
-            return numMC * 10;
+            return numU * 10;
         }
 
     }

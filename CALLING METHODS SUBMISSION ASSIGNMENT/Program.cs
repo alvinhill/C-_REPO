@@ -8,35 +8,29 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
 {
     class Program
     {
-        // STEP 279
-        // MAIN METHOD SUBMISSION ASSIGNMENT
+        // STEP 275
+        // CALLING_METHODS_SUBMISSION_ASSIGNMENT
         static void Main(string[] args)
         {
             // CREATE OBJECT
             CALC calc = new CALC();
 
             // INPUT ADDITION METHOD
-            Console.Write("Add 100 to Your Number: ");
+            Console.Write("Enter a number to do some math on: ");
             calc.numU = Convert.ToInt32(Console.ReadLine());
 
             // OUTPUT ADDITION ANSWER
-            Console.WriteLine(calc.Addnum(calc.numU));
-            Console.ReadLine();
-
-            // INPUT SUBTRACTION METHOD
-            Console.Write("Subtract 10 From Your Number: ");
-            calc.numSC = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("100 ADDED TO THE NUMBER = "+calc.Addnum(calc.numU));
+            
 
             // OUTPUT SUBTRACTION ANSWER
-            Console.WriteLine(calc.Subnum(calc.numSC));
-            Console.ReadLine();
+            Console.WriteLine("10 SUBTRACTED FROM THE NUMBER = "+calc.Subnum(calc.numU));
+            // Console.ReadLine();
 
-            // INPUT MULTIPLICATION METHOD
-            Console.Write("Multply Your Number BY 10: ");
-            calc.numMC = Convert.ToInt32(Console.ReadLine());
+           
 
             // OUTPUT MULTIPLICATION ANSWER
-            Console.WriteLine(calc.Multnum(calc.numMC));
+            Console.Write("10 MULTIPLIED TO THE NUMBER= "+calc.Multnum(calc.numU));
             Console.ReadLine();
 
 
