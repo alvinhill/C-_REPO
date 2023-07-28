@@ -8,12 +8,7 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
 {
     class CALC
     {
-
-        // DECLARE VARIABLES
-        //public int numOne;
-        //public decimal numTwo;
-        //public string numThree;
-
+        //MAIN METHOD SUBMISSION ASSIGNMENT
         public int numOne { get; set; }
         public decimal numTwo {get;set;}
         public string numThree { get; set; }
@@ -32,14 +27,12 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
             return result;
         }
 
-
         // CREATE STRING CLASS OVERLOAD
         public string DoMath(string numThree)
         {
             int result = Convert.ToInt32(numThree) + 10;
             return Convert.ToString(result);
         }
-
 
     }
 }

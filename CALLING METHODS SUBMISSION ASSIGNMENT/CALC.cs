@@ -13,9 +13,7 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
         
         // ACCESS PROPERTY
          public int numU;
-      
     
-
         public int num1 { get; set; }
        // public int numSC { get; set; }
         // ADDITION SECTION

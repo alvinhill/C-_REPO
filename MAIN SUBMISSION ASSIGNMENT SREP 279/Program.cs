@@ -11,6 +11,7 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
         static void Main(string[] args)
         {
 
+            // MAIN METHOD SUBMISSION ASSIGNMENT
             // CREATE OBJECT
             CALC calc = new CALC();
 
