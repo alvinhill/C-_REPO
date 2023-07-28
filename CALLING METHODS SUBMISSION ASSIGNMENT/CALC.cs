@@ -8,55 +8,28 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
 {
     class CALC
     {
-
-        // DEFINE VARIABLES
-
-        // public int numMU = 10;
-        //public int numC = 100;
-        //public int numSUS = 10;
+        // ASSIGN CLASS VARIABLES
         public int numU;
         public int numSC;
         public int numMC;
-        
-
+    
         // ADDITION SECTION
-        public int Addnum()
+        public int Addnum(int numU)
         {
             return numU + 100;
         }
 
         // SUBTRACTION SECTION
-        public int Subnum()
+        public int Subnum(int numSC)
         {
             return numSC - 10;
         }
 
         // MULTIPLICATION SECTION
-        public int Multnum()
+        public int Multnum( int numMC)
         {
             return numMC * 10;
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     }
 }

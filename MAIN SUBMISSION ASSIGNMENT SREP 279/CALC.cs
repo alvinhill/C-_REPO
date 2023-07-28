@@ -10,9 +10,9 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
     {
 
         // DECLARE VARIABLES
-        public int numOne;
-        public decimal numTwo;
-        public string numThree;
+        //public int numOne;
+        //public decimal numTwo;
+        //public string numThree;
 
 
         // CREATE INT CLASS
