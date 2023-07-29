@@ -10,11 +10,7 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
     class CALC
     {   
         // STEP 275
-        
-        // ACCESS PROPERTY
-        // public int numU;
-    
-     //  public int num1 { get; set; }
+       
        
         // ADDITION SECTION
         public int Addnum(int numU)

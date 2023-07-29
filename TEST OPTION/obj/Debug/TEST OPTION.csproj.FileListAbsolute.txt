@@ -1,0 +1,7 @@
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\TEST OPTION\bin\Debug\TEST OPTION.exe.config
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\TEST OPTION\bin\Debug\TEST OPTION.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\TEST OPTION\bin\Debug\TEST OPTION.pdb
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\TEST OPTION\obj\Debug\TEST OPTION.csproj.AssemblyReference.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\TEST OPTION\obj\Debug\TEST OPTION.csproj.CoreCompileInputs.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\TEST OPTION\obj\Debug\TEST OPTION.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\TEST OPTION\obj\Debug\TEST OPTION.pdb

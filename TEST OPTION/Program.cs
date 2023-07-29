@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace METHOD_SUBMISSION_ASSIGNMENT_STEP_280
+namespace TEST_OPTION
 {
     class Program
     {
         static void Main()
+
         {
-            CALC calc = new CALC();
+            TEST test = new TEST();
 
             string signal;
 
@@ -25,37 +26,23 @@ namespace METHOD_SUBMISSION_ASSIGNMENT_STEP_280
             signal = Console.ReadLine();
 
             // SWITCH TO MAKE THE CHOICE
-            if (signal == "y")
+            if (signal=="y")
             {
-                // OUTPUT NUMBER WITH OPTIONAL PARAMENTER ADDED TO IT.
-                Console.WriteLine(calc.AddNumber(Number1));
+               // OUTPUT NUMBER WITH OPTIONAL PARAMENTER ADDED TO IT.
+                Console.WriteLine(test.AddNumber(Number1));
 
                 Console.ReadLine();
             }
-            else
+          else
             {
                 Console.Write("ENTER NUMBER 2 ");
                 int Number2 = Convert.ToInt32(Console.ReadLine());
 
                 //OUTPUT NUMBER ONE AND NUMBER 2 ADDED TOGETHER
-                Console.WriteLine(calc.AddNumber(Number1, Number2));
+                Console.WriteLine(test.AddNumber(Number1, Number2));
                 Console.ReadLine();
 
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         }
     }
