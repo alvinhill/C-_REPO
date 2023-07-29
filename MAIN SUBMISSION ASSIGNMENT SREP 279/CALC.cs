@@ -9,9 +9,7 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
     class CALC
     {
         //MAIN METHOD SUBMISSION ASSIGNMENT
-        public int numOne { get; set; }
-        public decimal numTwo {get;set;}
-        public string numThree { get; set; }
+   
 
         // CREATE INT CLASS
         public int DoMath(int numOne)
@@ -21,17 +19,17 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
         }
 
         // CREATE DECIMAL CLASS OVERLOAD
-        public decimal DoMath(decimal numTwo)
+        public int DoMath(decimal numTwo)
         {
-            decimal result = numTwo - 15.27m;
+            int result = Convert.ToInt32(numTwo - 15.27m);
             return result;
         }
 
         // CREATE STRING CLASS OVERLOAD
-        public string DoMath(string numThree)
+        public int DoMath(string numThree)
         {
             int result = Convert.ToInt32(numThree) + 10;
-            return Convert.ToString(result);
+            return result;
         }
 
     }

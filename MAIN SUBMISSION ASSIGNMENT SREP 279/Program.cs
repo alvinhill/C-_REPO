@@ -17,26 +17,26 @@ namespace MAIN_SUBMISSION_ASSIGNMENT_SREP_279
 
             // ENTER NUMBER INTO CALC CLASS
             Console.Write("Enter Int Number to Multify by Five ");
-            calc.numOne = Convert.ToInt32(Console.ReadLine());
+             int numOne = Convert.ToInt32(Console.ReadLine());
 
             // GET MATH OPERATION FROM FIRST CLASS
-            Console.WriteLine(calc.DoMath(calc.numOne));
+            Console.WriteLine(calc.DoMath(numOne));
             Console.ReadLine();
 
             // ENTER NUMBER INTO CALC CLASS
             Console.Write("Enter Decimal Number That Will Be Subtracted By 15.27 ");
-            calc.numTwo = Convert.ToDecimal(Console.ReadLine());
+            decimal numTwo = Convert.ToDecimal(Console.ReadLine());
 
             // GET MATH OPERATION FROM NEXT OVERLOADED CLASS
-            Console.WriteLine(calc.DoMath(calc.numTwo));
+            Console.WriteLine(calc.DoMath(numTwo));
             Console.ReadLine();
 
             // ENTER NUMBER INTO CALC CLASS
             Console.Write("Enter A Number to Add 10 To ");
-            calc.numThree = (Console.ReadLine());
+            string numThree = (Console.ReadLine());
 
             // GET MATH OPERATION FROM NEXT OVERLOADED CLASS
-            Console.WriteLine(calc.DoMath(calc.numThree));
+            Console.WriteLine(calc.DoMath(numThree));
             Console.ReadLine();
 
 
