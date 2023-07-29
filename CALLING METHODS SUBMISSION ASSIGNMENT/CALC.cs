@@ -12,10 +12,10 @@ namespace CALLING_METHODS_SUBMISSION_ASSIGNMENT
         // STEP 275
         
         // ACCESS PROPERTY
-         public int numU;
+        // public int numU;
     
-        public int num1 { get; set; }
-       // public int numSC { get; set; }
+     //  public int num1 { get; set; }
+       
         // ADDITION SECTION
         public int Addnum(int numU)
         {
