@@ -12,50 +12,33 @@ namespace METHOD_SUBMISSION_ASSIGNMENT_STEP_280
         {
             CALC calc = new CALC();
 
-            string signal;
-
-            // THIS OVERRIDES THE THE OPTIONAL PARAMETER AND ADDS
-            // THE FIRST NUMBER TO THE SECOND NUMBER
-
-            Console.Write("ENTER NUMBER 1 ");
+           
+           
+            // ENTER NUMBERS
+            Console.Write("ENTER TWO NUMBERS ONE AT A TIME. ");
             int Number1 = Convert.ToInt32(Console.ReadLine());
 
+            // THIS OVERRIDES THE THE OPTIONAL PARAMETER AND ADDS
+            Console.Write("PRESS ENTER TO SKIP SECOND NUMBER  ");
+            string signal = Console.ReadLine();
 
-            Console.Write("PRESS \"y\" TO AOUTMATICALLY ADD 10  ");
-            signal = Console.ReadLine();
-
-            // SWITCH TO MAKE THE CHOICE
-            if (signal == "y")
+            // SWITCH TO MAKE THE CHOICE AND STORE VALUE FOR SECOND NUMBER IN "signal"
+            if (signal == "")
             {
                 // OUTPUT NUMBER WITH OPTIONAL PARAMENTER ADDED TO IT.
-                Console.WriteLine(calc.AddNumber(Number1));
+                Console.WriteLine("TOTAL WITH AUTO INPUT "+calc.AddNumber(Number1));
 
-                Console.ReadLine();
             }
             else
             {
-                Console.Write("ENTER NUMBER 2 ");
-                int Number2 = Convert.ToInt32(Console.ReadLine());
-
+             //   Console.Write("ENTER NUMBER 2 ");
+                int Number2 = Convert.ToInt32(signal);
+                
                 //OUTPUT NUMBER ONE AND NUMBER 2 ADDED TOGETHER
-                Console.WriteLine(calc.AddNumber(Number1, Number2));
-                Console.ReadLine();
+                Console.WriteLine("TOTAL OF MANUAL INPUT "+calc.AddNumber(Number1, Number2));
+             }
 
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            Console.ReadLine();
 
         }
     }
