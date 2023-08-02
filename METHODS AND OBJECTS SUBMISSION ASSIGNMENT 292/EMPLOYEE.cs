@@ -13,12 +13,7 @@ namespace METHODS_AND_OBJECTS_SUBMISSION_ASSIGNMENT_292
         // CREATE PROERTY FOR ID
         public int Id { get; set; }
 
-        // CREATE CONSTUCTOR FOR EMPLOYEE CLASS
-        public EMPLOYEE()
-        {
-            this.FirstName = " Sample ";
-            this.LastName = " Student ";
-        }
+        
 
         
 
