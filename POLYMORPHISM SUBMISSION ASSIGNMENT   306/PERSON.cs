@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ABSTRACT_CLASS_SUBMISSION_ASSIGNMENT__PAGE_302
+namespace POLYMORPHISM_SUBMISSION_ASSIGNMENT___306
 {
     public abstract class PERSON
-
         // BASE CLASS
     {
         // CREATE 2 PROPERITES 
@@ -19,7 +18,17 @@ namespace ABSTRACT_CLASS_SUBMISSION_ASSIGNMENT__PAGE_302
         {
             // this method has been overridden in the EMPLOYEE class
             Console.WriteLine("Name: " + FirstName + " " + LastName);
-           Console.ReadLine();
+           
         }
     }
+
+    
+
+
+
+
+
+
+
+
 }
