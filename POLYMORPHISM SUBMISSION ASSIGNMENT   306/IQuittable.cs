@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace POLYMORPHISM_SUBMISSION_ASSIGNMENT___306
 {
     // DEFINE INTEFACE
-    interface IQuittable
+    public interface IQuittable
     {
         void Quit();
     }

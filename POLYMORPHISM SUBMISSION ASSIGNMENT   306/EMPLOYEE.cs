@@ -20,7 +20,7 @@ namespace POLYMORPHISM_SUBMISSION_ASSIGNMENT___306
         // INTERFACE METHOD
         public void Quit()
         {
-           // throw new NotImplementedException();
+           
             Console.WriteLine("Interface Message ");
 
         }

@@ -21,6 +21,11 @@ namespace POLYMORPHISM_SUBMISSION_ASSIGNMENT___306
             employee.SayName();
             // CALL quit INTERFACE METHOD 
             employee.Quit();
+
+
+            //TYPE     VARIBLE         CLASS
+            IQuittable employee1 = new EMPLOYEE();
+           
             Console.ReadLine();
 
         }
