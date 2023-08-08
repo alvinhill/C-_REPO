@@ -10,118 +10,66 @@ namespace LAMBDA_SUBMISSION_ASSIGNMENT___338
     {
         static void Main(string[] args)
         {
-            EMPLOYEE worker = new EMPLOYEE();
-            
-            List<string> people = new List<string>();
-            List<string> extra = new List<string>();
-
-
-            people.Add(worker.Id+ "1" );
-            people.Add(worker.FirstName+"Joe");
-            people.Add(worker.LastName + "Cocker");
-
-            people.Add(worker.Id + "2");
-            people.Add(worker.FirstName + "Sam");
-            people.Add(worker.LastName + "Jones");
-
-            people.Add(worker.Id + "3");
-            people.Add(worker.FirstName + "Joe");
-            people.Add(worker.LastName + "Jones");
-
-            people.Add(worker.Id + "4");
-            people.Add(worker.FirstName + "Mike");
-            people.Add(worker.LastName + "Town");
-
-            people.Add(worker.Id + "5");
-            people.Add(worker.FirstName + "Sally");
-            people.Add(worker.LastName + "Mack");
-
-            people.Add(worker.Id + "6");
-            people.Add(worker.FirstName + "Wendy");
-            people.Add(worker.LastName + "Hover");
-
-            people.Add(worker.Id + "7");
-            people.Add(worker.FirstName + "Robin");
-            people.Add(worker.LastName + "Hover");
-
-            people.Add(worker.Id + "8");
-            people.Add(worker.FirstName + "Kaylee");
-            people.Add(worker.LastName + "Smith");
-
-            people.Add(worker.Id + "9");
-            people.Add(worker.FirstName + "Staci");
-            people.Add(worker.LastName + "Franks");
-
-            people.Add(worker.Id + "10");
-            people.Add(worker.FirstName + "Janet");
-            people.Add(worker.LastName + "Able");
-
-            // FOREACH LOOP
-            //foreach (string LoopData in people )
-            //    {
-            //     Console.WriteLine(LoopData);
-            // if (LoopData.Contains("Joe"))
-            //    {
-            //    extra.Add(LoopData);
-            //    }
-
-            //    }
           
-            {//---------------------------------------------------------------
-                //FILTER OUT "JOEs"
-                // people.ForEach(x =>
-                //{
-                //    if (x == "Joe")
-                //    {
-                //        extra.Add(x);
-                //        Console.WriteLine(x);
-                //    }
-                //});
-                //############################################
-                //TRY TO FIND VALUES OVER "5"
-                people.ForEach(x =>
+            List<EMPLOYEE> employees = new List<EMPLOYEE>
+            {
+                // CREATE OBJECTS FOR employees
+                new EMPLOYEE{FirstName="Joe",LastName="Jones",Id=1},
+                new EMPLOYEE{FirstName="Frank",LastName="Jones",Id=2},
+                new EMPLOYEE{FirstName="Joe",LastName="Miller",Id=3},
+                new EMPLOYEE{FirstName="MIke",LastName="Jones",Id=4},
+                new EMPLOYEE{FirstName="Billy",LastName="Smith",Id=5},
+                new EMPLOYEE{FirstName="Jerry",LastName="Miller",Id=6},
+                new EMPLOYEE{FirstName="Kaylee",LastName="Jones",Id=7},
+                new EMPLOYEE{FirstName="Staci",LastName="Franks",Id=8},
+                new EMPLOYEE{FirstName="Linda",LastName="Mays",Id=9},
+                new EMPLOYEE{FirstName="Mary",LastName="Newton",Id=10}
+                
+            };
+            //CREATE LIST FOR DUPLICATE "JOEs"
+            List<string> extra = new List<string>();
+            //CREATE LIST FOR Ids OVER 5
+            List<string> extra5 = new List<string>();
+            //############################################
+            Console.WriteLine("PRINT FULL LIST");
+            //FOREACH LOOP TO PLACE THE joes IN A LIST   
+            foreach (EMPLOYEE LoopData in employees)
+            {
+                Console.WriteLine(LoopData.Id+" "+LoopData.FirstName+" "+LoopData.LastName);
+                if ((LoopData.FirstName).Contains("Joe"))
                 {
-                    if ((Convert.ToInt32(worker.Id) > 5))
+                    extra.Add(LoopData.FirstName);
+                }
+            }
+            Console.WriteLine("");
+            {//---------------------------------------------------------------
+             //############################################
+             // POINT OUT "JOEs" WITH LAMBDA AND SEND THEM TO THE extra LIST
+                Console.WriteLine("PRINT DUPLICATE JOEs AND ADD THEM TO THE extra LIST");
+
+                employees.ForEach(x =>
+                {
+                    if(x.FirstName=="Joe")
                     {
-                        extra.Add(worker.FirstName);
-                        Console.WriteLine(x);
+                        // SEND THEM TO THE extra LIST
+                        extra.Add(x.FirstName);
+                            Console.WriteLine("DUPLICATES= "+x.Id+" "+x.FirstName+" "+x.LastName);
+                    }
+                  });
+                //############################################
+                //FIND VALUES OVER "5" AND SEND THEM TO THE extra5 LIST USING LAMBDA
+                Console.WriteLine("");
+                Console.WriteLine("PRINT EMPLOYEE ID OVER 5   ");
+                employees.ForEach(x =>
+                {
+                    if (x.Id>5)
+                    {
+                        extra5.Add(x.FirstName);
+                        Console.WriteLine(x.Id +" "+ x.FirstName+" "+x.LastName);
                     }
                 });
-                //*******************************************
-                // people.ForEach(x =>
-                //{
-                //    if (x == "5")
-                //    {
-                //        extra.Add(x);
-                //        Console.WriteLine(x);
-                //    }
-                //});
-                //foreach (string LoopData in people)
-                               
-                //{
-                //    Console.WriteLine(LoopData);
-                //    //if (LoopData.Contains("Joe"))
-                //    if (Convert.ToInt32(worker.Id)>5)
-                //    {
-                //        extra.Add(LoopData);
-                //    }
-
-                //}
-
-                //XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-
-
-
-
+                //############################################
                 Console.ReadLine();
-
-
-
-
-
-
-
             }
         }
     }
