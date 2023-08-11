@@ -11,31 +11,44 @@ namespace BLACKJACK
         public DECK()
         {
             CARDS = new List<CARD>(); // property// ** list name might be wrong "part 2-4:30"
-
-            // CARD  IS A PROPERTY OF THE DECK CLASS-YOU DON'T NEED TO PUT THE DATATYPE
-            // OR GIVE IT A VARIABLE NAME
-
-            // CREATE TWO LISTS
-            List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades" };
-            List<string> Faces = new List<string>()
+            for (int i = 0; i < 13; i++)
             {
-             "Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King","Ace"
-            };
-            foreach (string face in Faces)
-            {
-
-                foreach (string suit in Suits)
+                for (int j = 0; j < 4; j++)
                 {
-                    CARD card = new CARD();  // CREATE A CARD OBJECT EACH TIME IT LOOPS
-                    card.Suit = suit;// ASSIGN A SUIT
-                    card.Face = face;// ASSIGN A FACE
-                    CARDS.Add(card); // ADDS THE OUPUT TO THIS LIST
-
+                    CARD card = new CARD();
+                    card.Face = (Face)j;
+                    card.Suit = (Suit)i;
+                    CARDS.Add(card);
                 }
 
             }
         }
         public List<CARD> CARDS { get; set; } // PROPERTY
 
+        public void Shuffle(int times=1)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                List<CARD> TempList = new List<CARD>();
+                Random random = new Random();
+
+                while (CARDS.Count>0)
+                {
+                    int randomIndex = random.Next(0, CARDS.Count);
+                    TempList.Add(CARDS[randomIndex]);
+                    CARDS.RemoveAt(randomIndex);
+
+
+                }
+
+                CARDS = TempList;
+
+            }
+
+
+        }
+
+
+        
     }
 }

@@ -6,19 +6,16 @@ using System.Threading.Tasks;
 
 namespace BLACKJACK
 {
-    public class CARD
+    public struct CARD
     {
 
-        public CARD()
+        public Suit Suit { get; set; } // THIS IS A PROPERTY
+        public Face Face { get; set; } // THIS IS A PROPERTY
+        public override string ToString()
         {
+            return string.Format("{0} of {1}", Face, Suit);
 
-            Suit = "Spades";
-            Face = "Two";
         }
-
-        public string Suit { get; set; } // THIS IS A PROPERTY
-
-        public string Face { get; set; } // THIS IS A PROPERTY
 
 
     }
@@ -47,7 +44,7 @@ namespace BLACKJACK
         Ace
 
     }
-
+    
 
 
 

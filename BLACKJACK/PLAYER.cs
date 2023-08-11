@@ -14,8 +14,8 @@ namespace BLACKJACK
             Balance = beginningBalance;
             Name = name;
         }
-
-        public List<CARD> HAND { get; set; }
+        private List<CARD> _hand = new List<CARD>();
+        public List<CARD> HAND { get { return _hand; } set { _hand = value; } }
         public int Balance { get; set; }
         public string Name { get; set; }
         public bool isActivlyPlaying { get; set; }

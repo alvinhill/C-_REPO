@@ -8,9 +8,15 @@ namespace BLACKJACK
 {
     public abstract class GAME
     {
-        public List<PLAYER> Players { get; set; }
+        private List<PLAYER> _players = new List<PLAYER>();
+        private Dictionary<PLAYER, int> _bets = new Dictionary<PLAYER, int>();
+
+        public List<PLAYER> Players { get { return _players; } set { _players = value; } }
         public string Name { get; set; }
-        public Dictionary<PLAYER, int> Bets { get; set; }
+        public Dictionary<PLAYER, int> Bets { get { return _bets; } set { _bets = value; } }
+
+        
+        
 
         public abstract void Play();// MUST USE THIS METHOD -  this is a abastact method
 
@@ -23,12 +29,6 @@ namespace BLACKJACK
             }
 
         }
-
-
-
-
-
-
 
 
     }

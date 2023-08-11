@@ -1,0 +1,7 @@
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\BLACKJACK\obj\Debug\BLACKJACK.csproj.AssemblyReference.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\BLACKJACK\obj\Debug\BLACKJACK.csproj.CoreCompileInputs.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\BLACKJACK\bin\Debug\BLACKJACK.exe.config
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\BLACKJACK\bin\Debug\BLACKJACK.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\BLACKJACK\bin\Debug\BLACKJACK.pdb
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\BLACKJACK\obj\Debug\BLACKJACK.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\BLACKJACK\obj\Debug\BLACKJACK.pdb

@@ -8,8 +8,8 @@ namespace BLACKJACK
 {
    public class TWENTYONEDEALER:DEALER
     {
- 
-        public List<CARD> HAND { get; set; }
+        private List<CARD> _hand = new List<CARD>();
+        public List<CARD> HAND { get { return _hand; } set { _hand = value; } }
         public bool Stay { get; set; }
         public bool isBusted { get; set; }
 
