@@ -32,8 +32,6 @@ namespace BLACKJACK
         {
             
             int aceCount = HAND.Count(x => x.Face == Face.Ace);
-
-            
             int[] result = new int[aceCount + 1];
             int value = HAND.Sum(x => _cardValues[x.Face]);
             result[0] = value;
@@ -93,7 +91,8 @@ namespace BLACKJACK
             int[] PlayerResults = GetAllPossibleValues(playerHand);
             int[] DealerResults = GetAllPossibleValues(DealerHand);
 
-            int playerScore = PlayerResults.Where(x => x < 22).Max();
+            int playerScore = PlayerResults.Where(x => x < 22).Max();   // MIGHT BE AN ERROR HERE
+            
             int DealerScore = DealerResults.Where(x => x < 22).Max();
 
             if (playerScore > DealerScore) return true;

@@ -23,7 +23,7 @@ namespace BLACKJACK
     {
         Spades,
         Clubs,
-        Diamons,
+        Diamonds,
         Hearts
     }
     public enum Face

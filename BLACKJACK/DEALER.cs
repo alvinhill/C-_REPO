@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.IO;
 namespace BLACKJACK
 {
     public class DEALER
@@ -17,7 +17,14 @@ namespace BLACKJACK
         public void Deal(List<CARD> HAND)
         {
             HAND.Add(DECK.CARDS.First());
-            Console.WriteLine(DECK.CARDS.First().ToString() + "\n");
+            string card = string.Format(DECK.CARDS.First().ToString() + "\n");
+            Console.WriteLine(card);
+            using (StreamWriter file= new StreamWriter(@"C:\Users\rainf\DATA\log.txt",true))
+            {
+                file.WriteLine(DateTime.Now);
+                file.WriteLine(card);
+            }
+            
             DECK.CARDS.RemoveAt(0);
 
         }

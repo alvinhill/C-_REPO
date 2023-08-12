@@ -16,8 +16,8 @@ namespace BLACKJACK
                 for (int j = 0; j < 4; j++)
                 {
                     CARD card = new CARD();
-                    card.Face = (Face)j;
-                    card.Suit = (Suit)i;
+                    card.Face = (Face)i;
+                    card.Suit = (Suit)j;
                     CARDS.Add(card);
                 }
 

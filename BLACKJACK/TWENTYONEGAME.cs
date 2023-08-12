@@ -44,7 +44,14 @@ namespace BLACKJACK
                 Console.WriteLine("Dealing....");
                 foreach (PLAYER player in Players) /// MAY NEED TO CHANGE THIS *** **** **** 
                 {
-                    Console.Write("{0}:", player.Name);
+                   // START NEW PART
+                    
+                    // I WENT BACK TO VIDEO # 4 STILL NOT SURE 
+                    
+                    
+                    
+                    // END NEW PART
+                    Console.Write("                  {0}:", player.Name);
                     DEALER.Deal(player.HAND);
                     if (i == 1)
                     {
@@ -60,6 +67,9 @@ namespace BLACKJACK
                     }
 
                 }
+
+
+                // THINK OVERRIDE SHOULD GO HERE
                 Console.Write("Dealer: ");
                 DEALER.Deal(DEALER.HAND);
                     if (i==1)
@@ -139,7 +149,8 @@ namespace BLACKJACK
 
                foreach (KeyValuePair<PLAYER,int> entry in Bets)
                     {
-                    Console.WriteLine("{0} won {1}!", entry.Key, Name, entry.Value);
+                   // Console.WriteLine("{0} won {1}!", entry.Key, Name, entry.Value);// line 142
+                    Console.WriteLine("{0} won {1}!", entry.Key.Name, entry.Value);// line 142
                     Players.Where(x => x.Name == entry.Key.Name).First().Balance += (entry.Value * 2);
                     DEALER.Balance -= entry.Value;
 
@@ -181,10 +192,15 @@ namespace BLACKJACK
                     player.isActivlyPlaying = false;
                 }
 
-
-
             }
         }
+
+
+
+
+
+
+
 
         public override void ListPlayers()
         {
@@ -197,16 +213,6 @@ namespace BLACKJACK
             throw new NotImplementedException();
         }
     }
-
-
-
-
-
-
-
-
-
-
 
 }
 
