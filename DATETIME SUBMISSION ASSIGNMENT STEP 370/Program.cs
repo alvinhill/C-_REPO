@@ -36,7 +36,7 @@ namespace DATETIME_SUBMISSION_ASSIGNMENT_STEP_370
             Console.Write("IN " + x + " HOURS, IT WILL BE: "+Mytime);
 
           
-            Console.ReadKey();
+            Console.ReadLine();
 
         }
     }
