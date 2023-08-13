@@ -31,7 +31,7 @@ namespace DATETIME_SUBMISSION_ASSIGNMENT_STEP_370
 
             // CREATE DATETIME VARIABLE 
             // USE "NOW" METHOD TO DISPLAY CURRENT TIME
-            // ADD HOURS TO Mytime VARIABLE
+            // ADD HOURS TO Mytime VARIABLE WIHT THE "ADD HOURS METHOD
             DateTime Mytime = DateTime.Now.AddHours(x);
             Console.Write("IN " + x + " HOURS, IT WILL BE: "+Mytime);
 
