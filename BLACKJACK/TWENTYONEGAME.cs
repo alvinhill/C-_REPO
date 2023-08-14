@@ -25,11 +25,30 @@ namespace BLACKJACK
             DEALER.Stay = false;
             DEALER.DECK = new DECK();
             DEALER.DECK.Shuffle();
-            Console.WriteLine("Place Your Bet ");
+          //  Console.WriteLine("Place Your Bet ");
 
             foreach (PLAYER player in Players)
             {
-                int bet = Convert.ToInt32(Console.ReadLine());
+                bool vaiidanswer = false;
+                int bet = 0;
+                while (!vaiidanswer)
+                {
+                    Console.WriteLine("Place your bet");
+                    vaiidanswer = int.TryParse(Console.ReadLine(), out bet);
+                    if (!vaiidanswer) Console.WriteLine("Please enter digits only no decimals.");
+                   // int bet = Convert.ToInt32(Console.ReadLine());
+
+
+                }
+                if (bet <0)
+                {
+                    throw new FraudException("Security: Kick this person out");
+                }
+
+
+
+
+               
                 bool successfullyBet = player.Bet(bet);
                 if (!successfullyBet)
                 {

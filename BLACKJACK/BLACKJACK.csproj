@@ -46,6 +46,8 @@
     <Compile Include="CARD.cs" />
     <Compile Include="DEALER.cs" />
     <Compile Include="DECK.cs" />
+    <Compile Include="EXCEPTIONENTITY.cs" />
+    <Compile Include="FraudException.cs" />
     <Compile Include="GAME.cs" />
     <Compile Include="Iwalkaway.cs" />
     <Compile Include="PLAYER.cs" />
