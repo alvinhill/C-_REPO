@@ -8,49 +8,45 @@ namespace CONSTRUCTOR_SUBMISSION_ASSIGNMENT__385
 {
     class Program
     {
-       public static void Main(string[] args)
+        static void Main(string[] args)
         {
 
-            const int speed = 65;
+            Person guy = new Person();
 
-            RIDE car1 = new RIDE("Corvette ", 93500);
-            RIDE car2 = new RIDE("Chevy ", 1500);
+            guy.Fname = "henry";
+            guy.Lname = "France";
 
-            Console.WriteLine("The car is a " + car1.car +"at "+speed);
-            Console.Read();
+            Console.WriteLine(guy.Fname);
+            Console.WriteLine(guy.Lname);
+            Console.ReadLine();
+
         }
-    }
 
-    public class RIDE
-    {
-        public string car;
-        public int cost;
-
-        public RIDE(string car, int cost)
+        public class Person
         {
-            this.car = car;
-            this.cost = cost;
+            public string Fname;
+            public string Lname;
+
+            //public Person()
+            //{
+            //}
+
+
+            public Person(string Fname) : this(Fname, "Fred")
+            {
+
+            }
+            public Person(string Fname, string Lname)
+            {
+                this.Fname = Fname;
+                this.Lname = Lname;
+
+            }
+
         }
 
 
-
     }
-
-
-    //CARLOT data = new CARLOT("Toyota");
-
-    //Console.WriteLine("TYPE IN A CAR MODEL");
-
-    //data.car =Console.ReadLine();
-
-    //Console.WriteLine(data.Merch +" "+ data.price+" "+speed);
-    //Console.ReadLine();
-
-
-
-
-
-
 
 
 }
