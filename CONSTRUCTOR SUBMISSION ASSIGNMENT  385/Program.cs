@@ -10,7 +10,7 @@ namespace CONSTRUCTOR_SUBMISSION_ASSIGNMENT__385
     {
         static void Main(string[] args)
         {
-
+            // CHAIN CONSTRUCTORS
 
             // CREATE OBJECTS
             Person guy = new Person();
