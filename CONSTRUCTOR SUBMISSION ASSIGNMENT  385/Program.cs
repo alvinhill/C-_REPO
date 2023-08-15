@@ -11,40 +11,45 @@ namespace CONSTRUCTOR_SUBMISSION_ASSIGNMENT__385
         static void Main(string[] args)
         {
 
+
+            // CREATE OBJECTS
             Person guy = new Person();
+            Person guy1 = new Person("Sam");
+            Person guy2 = new Person("Henry", "France");
 
-            guy.Fname = "henry";
-            guy.Lname = "France";
-
-            Console.WriteLine(guy.Fname);
-            Console.WriteLine(guy.Lname);
+            // DISPLAY OBJECTS WITH DIFFERENT PARAMETERS
+            Console.WriteLine("NO PARAMENTERS "+guy.Fname+" "+ guy.Lname);
+            Console.WriteLine();
+            Console.WriteLine("ONE PARAMENTER " + guy1.Fname + " " + guy1.Lname);
+            Console.WriteLine();
+            Console.WriteLine("TWO PARAMENTERS " + guy2.Fname+" "+ guy2.Lname);
             Console.ReadLine();
 
         }
 
         public class Person
         {
+            // CREATE GLOBAL VARIBLES
             public string Fname;
             public string Lname;
 
-            //public Person()
-            //{
-            //}
+            // CONSTRUCTOR WITH ZERO PARAMENTERS
+            public Person() : this("John", "Smith")
+            {
+            }
 
-
+            // CONSTRUCTOR WITH ONE PARAMENTER
             public Person(string Fname) : this(Fname, "Fred")
             {
-
             }
+            
+            // CONSTRUCTOR WITH TWO PARAMENTERS
             public Person(string Fname, string Lname)
             {
                 this.Fname = Fname;
                 this.Lname = Lname;
-
             }
-
         }
-
 
     }
 
