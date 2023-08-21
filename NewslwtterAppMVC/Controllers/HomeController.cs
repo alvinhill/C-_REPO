@@ -54,8 +54,10 @@ namespace NewslwtterAppMVC.Controllers
                 var signups = db.SignUps;
                 var signupVms = new List<SignupVm>();
                 foreach (var signup in signups)//EF VIDEO #3 5:36
+
+                    // it is also calling an "IDisposible" interface in the NLEntites class
                 {
-                    var signupVm = new SignupVm();
+                    SignupVm signupVm = new SignupVm();
                     signupVm.FirstName = signup.FirstName;
                     signupVm.LastName = signup.LastName;
                     signupVm.EmailAddress = signup.EmailAddress;
@@ -96,7 +98,7 @@ namespace NewslwtterAppMVC.Controllers
             //    }
 
             //}
-
+            // TEST ITTEST 2
 
 
 
