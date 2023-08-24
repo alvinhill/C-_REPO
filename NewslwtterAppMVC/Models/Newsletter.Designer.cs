@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\NewslwtterAppMVC\Views\Home\EFDATA.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\NewslwtterAppMVC\Models\Newsletter.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

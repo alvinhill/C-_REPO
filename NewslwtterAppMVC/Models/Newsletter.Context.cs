@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace NewslwtterAppMVC.Views.Home
+namespace NewslwtterAppMVC.Models
 {
     using System;
     using System.Data.Entity;

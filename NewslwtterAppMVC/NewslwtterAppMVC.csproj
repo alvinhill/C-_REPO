@@ -130,32 +130,31 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\NLEntities.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\NEWSSIGNUP.cs" />
+    <Compile Include="Models\Newsletter.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Newsletter.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Newsletter.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Newsletter.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Newsletter.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Newsletter.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\SignUp.cs">
+      <DependentUpon>Newsletter.tt</DependentUpon>
+    </Compile>
     <Compile Include="ViewModel\SIGNUPVM.cs" />
-    <Compile Include="Views\Home\EFDATA.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFDATA.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\EFDATA.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFDATA.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\EFDATA.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EFDATA.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Home\SignUp.cs">
-      <DependentUpon>EFDATA.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap-grid.css" />
@@ -167,6 +166,16 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\Newsletter.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Newsletter.edmx</DependentUpon>
+      <LastGenOutput>Newsletter.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Newsletter.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Newsletter.edmx</DependentUpon>
+      <LastGenOutput>Newsletter.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -190,6 +199,13 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include=".editorconfig" />
+    <EntityDeploy Include="Models\Newsletter.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Newsletter.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Newsletter.edmx.diagram">
+      <DependentUpon>Newsletter.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -211,16 +227,6 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
-    <Content Include="Views\Home\EFDATA.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EFDATA.edmx</DependentUpon>
-      <LastGenOutput>EFDATA.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Views\Home\EFDATA.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EFDATA.edmx</DependentUpon>
-      <LastGenOutput>EFDATA.cs</LastGenOutput>
-    </Content>
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -243,14 +249,7 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Home\Success.cshtml" />
-    <Content Include="Views\Home\Admin.cshtml" />
-    <EntityDeploy Include="Views\Home\EFDATA.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EFDATA.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Views\Home\EFDATA.edmx.diagram">
-      <DependentUpon>EFDATA.edmx</DependentUpon>
-    </Content>
+    <Content Include="Views\Admin\index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
