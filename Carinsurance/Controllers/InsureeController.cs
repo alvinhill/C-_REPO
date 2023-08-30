@@ -13,11 +13,14 @@ namespace Carinsurance.Controllers
     public class InsureeController : Controller
     {
         private InsuranceEntities db = new InsuranceEntities();
-
-        // GET: Insuree
-        public ActionResult Index(string FirstName)
+        public ActionResult Admin()
         {
-           
+            return View(db.Insurees.ToList());
+        }
+        // GET: Insuree
+        public ActionResult Index()
+        {
+            
 
             return View(db.Insurees.ToList());
         }
@@ -59,48 +62,29 @@ namespace Carinsurance.Controllers
         public ActionResult Create([Bind(Include = "Id,FirstName,LastName,EmailAddress,DateOfBirth,CarYear,CarMake,CarModel,DUI,SpeedingTickets,CoverageType,Quote")] Insuree insuree)
         {
             //BASE RATE
-            if (insuree.FirstName !="")
-            {
-                insuree.Quote += 50;
-            }
-
-            DateTime MARK_AGE = DateTime.Now;
-            DateTime CUST_AGE = insuree.DateOfBirth;
-            int x = 18;
-
-            int y = 19;
-            int z = 25;
+            insuree.Quote += 50m;
+           
+            int MARK_AGE = DateTime.Now.Year;
+            int MARK_AGE1 = DateTime.Now.Year;
+            int CUST_AGE = insuree.DateOfBirth.Year;
+           
 
             //// ARE THEY YOUNGER THAN 18
-            if (CUST_AGE.AddYears(x) < MARK_AGE)
+            if (MARK_AGE-CUST_AGE<=18)
             {
 
                insuree.Quote += 100;
             }
-            else if (CUST_AGE.AddYears(y) > MARK_AGE && CUST_AGE.AddYears(z) < MARK_AGE)
+            // ARE THEY OLDER THAN 26
+            else if (MARK_AGE - CUST_AGE >=26)
             {
-                insuree.Quote += 77; // $25;
+                insuree.Quote += 25; 
             }
-
-
-
-
-
-            // ARE THEY BETWEEN 19 AND 26
-
-            //DateTime MARK_AGE1 = DateTime.Now;
-            //DateTime CUST_AGE1 = insuree.DateOfBirth;
-
-            //if (CUST_AGE.AddYears(y) > MARK_AGE && CUST_AGE.AddYears(z) < MARK_AGE)
-            //{
-            //    insuree.Quote += 77; // $25;
-
-            //}
-
-
-
-
-
+            // ARE THEY BETWEEN 19 AND 25 
+            else if (MARK_AGE - CUST_AGE >= 19 && MARK_AGE - CUST_AGE <= 25)
+            {
+                insuree.Quote += 50;
+            }
 
             // 911 PORSCHE CARRERA CHARGE
             if (insuree.CarMake == "Porsche" && insuree.CarModel=="911 Carrera")
@@ -127,21 +111,15 @@ namespace Carinsurance.Controllers
             // DUI
             if (insuree.DUI == true)
             {
-                Double DUI_RATE = Convert.ToDouble(insuree.Quote);
-                Double DUI_TOTAL = (.25 * DUI_RATE );
-                insuree.Quote += Convert.ToInt32(DUI_TOTAL);
+                insuree.Quote *= 1.25m;
             }
 
             // FULL COVERAGE
             if (insuree.CoverageType == true)
             {
-                Double COV_RATE = Convert.ToDouble(insuree.Quote);
-                Double COV_TOTAL = (.5 * COV_RATE);
-                insuree.Quote += Convert.ToInt32(COV_TOTAL);
+               
+                insuree.Quote *= 1.5m;
             }
-
-
-
 
 
             if (ModelState.IsValid)
