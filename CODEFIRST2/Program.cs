@@ -12,7 +12,7 @@ namespace CODEFIRST2
         static void Main(string[] args)
         {
             
-          
+          // getting system invalid operation error.
          
             User user = new User()
 
