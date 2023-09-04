@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
 
 namespace CODEFIRST3
 {
@@ -6,15 +8,30 @@ namespace CODEFIRST3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            using (var db = new StudentContext())
+            {
+               
+                Console.Write("Enter a name for a new Student: ");
+                var name = Console.ReadLine();
+
+                var student = new Student { Name = name };
+                db.Students.Add(student);
+                db.SaveChanges();
+
+                Console.WriteLine("Press any key to exit...");
+                Console.ReadKey();
+            }
+        }
+        public class Student
+        {
+            public int StudentId { get; set; }
+            public string Name { get; set; }
         }
 
-
-
-
-
-
-
+        public class StudentContext : DbContext
+        {
+            public DbSet<Student> Students { get; set; }
+        }
 
     }
 }
