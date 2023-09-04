@@ -1,0 +1,10 @@
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\bin\Debug\CODEFIRST2.exe.config
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\bin\Debug\CODEFIRST2.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\bin\Debug\CODEFIRST2.pdb
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\bin\Debug\EntityFramework.dll
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\bin\Debug\EntityFramework.xml
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\obj\Debug\CODEFIRST2.csproj.AssemblyReference.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\obj\Debug\CODEFIRST2.csproj.CoreCompileInputs.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\obj\Debug\CODEFIRST2.csproj.CopyComplete
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\obj\Debug\CODEFIRST2.exe
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODEFIRST2\obj\Debug\CODEFIRST2.pdb

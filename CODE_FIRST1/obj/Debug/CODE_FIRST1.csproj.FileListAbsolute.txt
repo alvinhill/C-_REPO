@@ -1,0 +1,2 @@
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODE_FIRST1\obj\Debug\CODE_FIRST1.csproj.AssemblyReference.cache
+C:\Users\rainf\Desktop\BASIC_C#_PROGRAMS\C#_PROJECTS\C-_REPO\CODE_FIRST1\obj\Debug\CODE_FIRST1.csproj.CoreCompileInputs.cache

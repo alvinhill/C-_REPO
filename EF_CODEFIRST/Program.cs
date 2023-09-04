@@ -15,10 +15,12 @@ namespace EF_CODEFIRST
     {
         static void Main(string[] args)
         {
+            // I HAD TO INSTALL ENTITY FRAMEWORK 5.02 INTO THIS PROJECT (GO FIGURE)
+            // I GOT ALL COMPILE ERRORS HANDLED MOSTLY WITH THE EF INSTALL
             using( var db = new BlogContext())
             {
                 Console.Write("Enter a name for a new blog: ");
-                var name = Console.ReadLine();
+                var name = Console.ReadLine();// name is name of the blog
 
                 var blog = new Blog { Name = name };
                 db.Blogs.Add(blog);// getting no database error here
@@ -41,10 +43,12 @@ namespace EF_CODEFIRST
     public class Blog
     {
 
-        //SCALE UP PROPERTIES
+        //SCALAR UP PROPERTIES
         public int BlogId { get; set; }
         public string Name { get; set; }
+        
 
+        // NAVIGATION PROPERTY
         public virtual List<Post> Posts { get; set; }
 
     }
@@ -53,7 +57,8 @@ namespace EF_CODEFIRST
         {
         public int PostId { get; set; }
         public string Title { get; set; }
-        public string Content { get; set; }
+        public string Content { get; set; } 
+        
 
         public int BlogId { get; set; }
         public virtual Blog Blog { get; set;}
@@ -63,7 +68,7 @@ namespace EF_CODEFIRST
           }
         
     public class BlogContext:DbContext
-    {
+    {// DB CONTEXT BASE CLASS IS ALL THE DATABASE INTERACTION
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Post> Posts { get; set; }
 
