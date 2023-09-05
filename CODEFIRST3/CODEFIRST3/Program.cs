@@ -10,7 +10,7 @@ namespace CODEFIRST3
         {
             using (var db = new StudentContext())
             {
-               
+             // THIS PROGRAM WILL ACTUALLY CREATES A DATABASE AND TABLES  
                 Console.Write("Enter a name for a new Student: ");
                 var name = Console.ReadLine();
 
